@@ -1,28 +1,28 @@
-# 🎬 Movie Recommendation System
+# "Movie Recommendation System"
 
 A hybrid movie recommender system that suggests movies based on user preferences, ratings, and content similarity.
 
 ---
 
-## 🚀 Features
+## *Features*
 
-- 🔍 Fuzzy Search (handles typos like "batmn" → Batman)
-- 🧠 Hybrid Recommendation System
+-  Fuzzy Search (handles typos like "batmn" → Batman)
+-  Hybrid Recommendation System
   - Collaborative Filtering (user ratings)
   - Content-Based Filtering (genres)
-- 👤 User Profiles
+-  User Profiles
   - Create and load profiles
   - Rate movies (1–5 stars)
-- 🎯 Personalized Recommendations
+-  Personalized Recommendations
   - Based on user’s highly rated movies
-- 🎬 Movie Posters
+-  Movie Posters
   - Fetched using TMDB API
-- ⚡ Fast Performance (caching)
-- 🎨 Interactive UI (Streamlit)
+-  Fast Performance (caching)
+-  Interactive UI (Streamlit)
 
 ---
 
-## 🧠 How It Works
+#  *How It Works*
 
 ### 1. Collaborative Filtering
 Finds movies liked by users with similar rating patterns.
@@ -34,9 +34,7 @@ Recommends movies with similar genres.
 
 Combines both approaches:
 
-```python
 final_score = 0.7 * rating_score + 0.3 * content_score
-```
 
 ### 4. Personalization
 - Uses user ratings (4–5 stars)
@@ -45,20 +43,16 @@ final_score = 0.7 * rating_score + 0.3 * content_score
 
 ---
 
-## 🖼️ Example
+##  *Example*
 
 Search:
 
-```
-batmn
-```
+*batmn*
 
 App suggests:
 
-```
-Batman (1989)
-Batman Returns (1992)
-```
+*Batman (1989)*
+*Batman Returns (1992)*
 
 Displays:
 - Posters
@@ -67,7 +61,7 @@ Displays:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python
 - Pandas
@@ -78,52 +72,42 @@ Displays:
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### 1. Clone the repo
 
-```bash
 git clone https://github.com/your-username/movie-recommender.git
 cd movie-recommender
-```
 
 ### 2. Create virtual environment
 
-```bash
-python -m venv .venv
+-m venv .venv
 .venv\Scripts\activate
-```
 
 ### 3. Install dependencies
 
-```bash
 pip install -r requirements.txt
-```
 
 ---
 
-## 🔑 Setup API Key
+##  Setup API Key
 
 1. Go to: https://www.themoviedb.org/
 2. Create account
 3. Get API key
 4. Add to `app.py`:
 
-```python
 API_KEY = "your_api_key_here"
-```
 
 ---
 
-## ▶️ Run the App
+## Run the App
 
-```bash
 python -m streamlit run app.py
-```
 
 ---
 
-## 👤 User Profiles
+##  User Profiles
 
 - Create a profile in sidebar
 - Rate movies
@@ -134,7 +118,6 @@ python -m streamlit run app.py
 
 ## 📁 Project Structure
 
-```
 src/
 ├── app.py
 ├── main.py
@@ -145,11 +128,10 @@ src/
 ├── similarity.py
 ├── content_based.py
 └── profiles.json
-```
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 - Deploy online
 - Improve model (SVD / matrix factorization)
@@ -159,7 +141,7 @@ src/
 
 ---
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 - MovieLens dataset
 - TMDB API
@@ -170,9 +152,3 @@ src/
 ## 📬 Author
 
 Endrit Abdulahi
-
----
-
-## ⭐ If you like this project
-
-Give it a star ⭐
